@@ -94,3 +94,33 @@ header {
 	color: #fff;
 	text-decoration: none;
 }
+.header-content-img img{
+    height: 100%;
+    width: 100%;
+}
+.goal {
+	margin-top: 130px;
+}
+.goal .container {
+	display: flex;
+}
+.goal-img {
+	margin-left: 100px;
+}
+.goal-content {
+	width: 700px;
+	margin-left: 50px;
+}
+.goal-content-title {
+	font-weight: normal;
+}
+.goal-content-text {
+	line-height: 1.5em;
+}
+.goal-content-textbold {
+	font-size: 18px;
+	font-weight: bold;
+	color: #9c9692;
+	text-align: right;
+	margin-top: 40px;
+} 
