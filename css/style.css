@@ -3,6 +3,12 @@ body,p,ul {
 	padding: 0;
 	font-family: 'Noto Sans', sans-serif; 
 }
+button:active, button:focus {
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+}
 header {
 	height: 100vh;
 }
@@ -118,4 +124,83 @@ header {
 	color: #9c9692;
 	text-align: right;
 	margin-top: 40px;
-} 
+}
+.services {
+	margin-top: 130px;
+}
+/* стили для карусели  */
+.owl-carousel {
+	width: 75% !important;
+	position: relative;
+	margin: 0 auto;
+}
+.owl-stage-outer {
+	width: 90% !important;
+	overflow: hidden; 
+	margin: 0 auto;
+}
+.haircut {
+	background: url(../img/haircutNewRed.jpg) no-repeat center;
+}
+.styling {
+	background: url(../img/stylingNewRed.jpg) no-repeat center;
+}
+.weaving {
+	background: url(../img/weavingNewRed.jpg) no-repeat center;
+}
+.coloring {
+	background: url(../img/coloringNEWRED.jpg) no-repeat center;
+}
+.straightening {
+	background: url(../img/straighteningNewRed.jpg) no-repeat center;
+}
+.care {
+	background: url(../img/care.jpg) no-repeat center;
+}
+.therapy {
+	background: url(../img/therapy.jpg) no-repeat center;
+}
+.coat {
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: center;
+	overflow: hidden;
+	background: rgba(187, 78, 79, 0.7);
+	width: 214px;
+	height: 214px;
+	color: #fff;
+}
+.coat:hover {
+	width: 174px;
+	height: 174px;
+	background: none;
+	border: 20px solid rgba(187, 78, 79, 0.7);
+	transition: 1s;
+	color: rgba(0, 0, 0, 0);
+}
+.coat p {
+	font-size: 14px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-left: 15px;
+	margin-right: 40px;
+	width: 120px;
+}
+
+.owl-nav {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 70px;
+	color: #9c9692;
+	font-weight: lighter;
+}
+.owl-prev {
+	position: absolute;
+	top: 60px;
+}
+.owl-next {
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
