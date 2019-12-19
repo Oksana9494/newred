@@ -27,8 +27,8 @@ header {
 .header-nav-menu ul li {
 	list-style: none;
 	/* margin-right: 30px; */
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
 	padding-top: 26px;
 	padding-bottom: 26px;
 }
@@ -44,12 +44,6 @@ header {
 .header-nav-phone {
 	width: 170px;
 	background: #88383d;
-}
-.header-nav-phone:hover {
-	width: 185px;
-	font-size: 20px;
-	line-height: 1;
-	transition: 0.8s;
 }
 .header-nav-phone p {
 	margin: 12px 0 7px 12px;
@@ -71,6 +65,7 @@ header {
 }
 .header-content-title-h1 {
 	display: block;
+	color: #5a5653;
 	margin-top: 130px;
 	margin-left: 80px;
 	font-size: 40px;
@@ -118,7 +113,7 @@ header {
 	line-height: 1.5em;
 }
 .goal-content-textbold {
-	font-size: 18px;
+	font-size: 22px;
 	font-weight: bold;
 	color: #9c9692;
 	text-align: right;
