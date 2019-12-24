@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="js/lib/owlcarousel2/assets/owl.theme.default.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
-<body>
+<body id="body">
 	<header>
 		<div class="container">
 			<div class="header-nav">
@@ -35,7 +35,7 @@
 					<button class="header-content-title-btn"><a href="#">Записаться</a></button>
 				</div>
 				<div class="header-content-img">
-					<img src="img/newredgirl1.jpg" alt="">
+					<img src="img/newredgirl.jpg" alt="">
 				</div>
 			</div>
 		</div>
@@ -54,17 +54,17 @@
 				<p class="goal-content-text">
 					Наши мастера для Вас подберут любую прическу по вашему желанию.  Креативная или классическая стрижка, вечерняя или повседневная укладка даст  вам возможность меняться в зависимости от настроения и обстоятельств .
 				</p>
-				<p class="goal-content-textbold">
+				<!-- <p class="goal-content-textbold">
 					Мы приложим максимум усилий, чтобы сделать вас еще прекраснее!
-				</p>
+				</p> -->
 			</div>
 		</div>
 	</section>
 	<section class="services">
 		<div class="container">
-			<div class="owl-carousel disabled">
+			<div class="owl-carousel disabled carousel">
 			    <div class="item haircut">
-			      <div class="coat" id="haircut">
+			      <div class="coat">
 			        <p>СТРИЖКА АНГЛИЙСКОЙ ТЕХНИКОЙ VIDAL SASSOON</p>
 			      </div>
 			    </div>
@@ -101,6 +101,295 @@
 			</div>
 		</div>
 	</section>
+	<section class="price">
+		<div class="container">
+			<a href="#" class="price-start" id="start">Стоимость услуг</a>
+			<div class="price-popUp" id="popUp">
+			      <span class="price-popUp-close" id="close"></span>
+			      <h3 class="price-popUp-title">Цены на наши услуги</h3>
+			      <table class="price-popUp-table">
+					<tr class="price-line title">
+						 <td class="price-name">Мытье головы</td>
+						 <td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Эстель</td>
+						<td class="price-number">50-100 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Лореаль</td>
+						<td class="price-number">150-200 руб.</td>
+					</tr>
+					<tr class="price-line title">
+						 <td class="price-name">Применение моделирующих средств</td>
+						 <td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Эстель</td>
+						<td class="price-number">50-200 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Лореаль</td>
+						<td class="price-number">100-300 руб.</td>
+					</tr>
+					<tr class="price-line">
+						<td class="price-name">Коррекция челки</td>
+						<td class="price-number">200 руб.</td>
+					</tr>
+					<tr class="price-line">
+						<td class="price-name">Стрижка детская (до 12лет)</td>
+						<td class="price-number">300-400 руб.</td>
+					</tr>
+					<tr class="price-line">
+						<td class="price-name">Стрижка кончиков</td>
+						<td class="price-number">500 руб.</td>
+					</tr>
+					<tr class="price-line">
+						<td class="price-name">Стрижка мужская</td>
+						<td class="price-number">350-700 руб.</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Стрижка модельная техникой VIDAL SASSON (входит сушка с направлением)</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Короткая</td>
+						<td class="price-number">700 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Средняя длина</td>
+						<td class="price-number">800 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Длинные волосы</td>
+						<td class="price-number">900 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Очень длинные </td>
+						<td class="price-number">1000 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Стрижка от специалиста</td>
+						<td class="price-number">1300-1500 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">За сложность</td>
+						<td class="price-number">+20%</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Укладка волос (без препаратов)</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Фен+брашинг</td>
+						<td class="price-number">300-500 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Утюжок</td>
+						<td class="price-number">200-400 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Мокрый эффект</td>
+						<td class="price-number">400-600 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Спиральная волна, кудри</td>
+						<td class="price-number">800-1200 руб.</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Прическа на длинные волосы</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Вечерняя</td>
+						<td class="price-number">1300-1500 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Свадебная</td>
+						<td class="price-number">1500-2500 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Плетение волос (1 коса)</td>
+						<td class="price-number">200 руб.</td>
+					</tr>
+					<tr class="price-line">
+						<td class="price-name">Окрашивание с красителем клиента</td>
+						<td class="price-number">400-600 руб.</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Окрашивание с красителем студии</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Inebrya (Италия)</td>
+						<td class="price-number">от 1500 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Estel (Делюкс)</td>
+						<td class="price-number">от 900 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Salerm cosmetic</td>
+						<td class="price-number">от 1300 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Loreal proffessionnel</td>
+						<td class="price-number">от 2100 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Окрашивание сложное (ombre, брондирование, треш, 3D, колорирование, мелирование air touch)</td>
+						<td class="price-number"> +50% к обычному окрашиванию</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Завивка волос классическая (без применения препаратов)</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Частичная</td>
+						<td class="price-number">700 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Короткие волосы</td>
+						<td class="price-number">1000 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Средняя длина</td>
+						<td class="price-number">1200 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Длинные волосы</td>
+						<td class="price-number">от 1500 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Очень длинные волосы</td>
+						<td class="price-number">от 2000 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Модельная завивка</td>
+						<td class="price-number">+50% от стоимости классической</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Применение препаратов</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Для химической</td>
+						<td class="price-number">от 200 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Для карвинга</td>
+						<td class="price-number">от 300 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Для биозавивки</td>
+						<td class="price-number">от 400 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Loreal</td>
+						<td class="price-number">от800 руб.</td>
+					</tr>
+					<tr class="price-line">
+						<td class="price-name">Пилинг кожи головы (Loreal)</td>
+						<td class="price-number">900-1100 руб.</td>
+					</tr>
+					<tr class="price-line title">
+						<td class="price-name">Долговременное выпрямление (Loreal)</td>
+						<td class="price-inane"></td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Нутрифаер (питательное обёртывание волос)</td>
+						<td class="price-number">800-1000 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Профайбер (глубокое восстановление волос)</td>
+						<td class="price-number">800-1000 руб.</td>
+					</tr>
+					<tr class="price-line light">
+						<td class="price-name">Кератиновое выпрямление (Amazonliss)</td>
+						<td class="price-number">от 4000 руб.</td>
+					</tr>
+				</table>
+			</div>
+			<div class="price-overlay" id="overlay"></div>
+		</div>
+	</section>
+	<section class="online_appointment">
+		<div class="container">
+			<div class="online_appointment-formblock">
+				<form action="#" class="online_appointment-form">
+					<h2 class="online_appointment-title">Онлайн-запись</h2>
+					<input type="name" placeholder="Имя" name="name" class="online_appointment-input" required>
+					<input type="tel" placeholder="Телефон" name="tel" class="online_appointment-input" required>
+					<input type="date" placeholder="Выберите дату" name="date" class="online_appointment-input" required>
+					<div class="online_appointment-form-buttons">
+						<button type="submit" class="btn-submit">Записаться</button>
+						<button type="reset" class="btn-reset">Отмена</button>
+					</div>
+				</form>
+			</div>
+			<div class="online_appointment-img">
+				<img src="img/newredstudio.jpg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="home_care">
+		<div class="container">
+			<h2 class="home_care-title">Домашний уход</h2>
+			<p class="home_care-text">
+				Наши мастера посоветуют для вас как салонные услуги для ваших волос так же и уход в домашних условиях.
+			</p>
+			<div class="home_care-slider owl-carousel disabled owl-theme">
+				<img src="img/1.png" alt="">
+				<img src="img/2.png" alt="">
+				<img src="img/3.png" alt="">
+				<img src="img/4.png" alt="">
+				<img src="img/5.png" alt="">
+				<img src="img/6.png" alt="">
+			</div>
+			<p class="home_care-newred">New Red</p>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-nav">
+				<div class="footer-nav-logo">
+					<img src="img/logo.svg" alt="">
+				</div>
+				<div class="footer-nav-menu">
+					<ul>
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Услуги</a></li>
+						<li><a href="#">Цены</a></li>
+						<li><a href="#">Онлайн-запись</a></li>
+						<li><a href="#">Домашний уход</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-contacts">
+				<div class="footer-contacts-text">
+					<p>Студия красоты «NEW RED»</p>
+					<p>Адрес:	г. Краснодар , ул. Леваневского  187</p>
+					<p>Телефон:	+7 (967) 673-64-42 , +7 (918) 185-83-42</p>
+					<p>Е-mail:	info@newred.ru</p>
+					<p>Время работы:	с 9:00 до 20:00</p>
+				</div>
+				<div class="footer-contacts-map">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac49bcf43aacb6ed4e6e5be00f13fdaf48e7e391722936acf0020e078670c433f&amp;source=constructor" width="400" height="300" frameborder="0"></iframe>
+				</div>
+			</div>
+			<div class="footer-credits">
+				<div class="footer-credits-text">
+					<p>2011-2019</p>
+					<p>Все права защищены</p>
+				</div>
+				<div class="footer-credits-text">
+					<p class="right">Создание сайта</p>
+					<p class="right">Oksana Chikunova</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 	<script src="js/lib/jquery/jquery-3.4.1.min.js"></script>
   	<script src="js/lib/owlcarousel2/owl.carousel.min.js"></script>
   	<script src="js/main.js"></script>
