@@ -163,8 +163,8 @@ $(document).ready(function(){
 // движение картинки
 $(document).ready(function(){
 	$(".online_appointment-formblock").mouseover(function(){
-    	$("#studio-img").css("marginLeft","900px");
-    	$("#studio-img").css("transition","4s");
+    	$("#studio-img").css("marginLeft","30%");
+    	$("#studio-img").css("transition","7s");
     });
     $(".online_appointment-formblock").mouseout(function(){
     	$("#studio-img").css("marginLeft","0");

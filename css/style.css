@@ -429,7 +429,7 @@ h2 {
 }
 .studio-img {
 	height: 100%;
-	margin-left: 850px;
+	/* margin-left: 62.2%; */
 }
 .online_appointment-form-buttons {
 	display: flex;
@@ -524,7 +524,7 @@ footer {
 .up_btn {
     height: 64px;
     width: 64px;
-    bottom: 10px;
+    bottom: 30px;
     right: 36px;
     cursor: pointer;
     display: none;
@@ -609,3 +609,31 @@ footer {
 	text-align: right;
 }
 
+
+/* планшеты и мобильные */
+/* 992px - 1360px */
+@media screen and (max-width: 1360px) {
+	.header-content-img {
+		height: 500px;
+		width: 1000px;
+	}
+	.carousel {
+		width: 77.5% !important;
+	}
+	.header-content-title-h1, .header-content-title-btn {
+		margin-left: 5%;
+	}
+	.home_care-newred {
+		right: calc(20% - 250px);
+	}
+	.footer-contacts-map {
+		width: 500px;
+		margin-right: calc(40% - 361px);
+	} 
+	.footer-nav-menu {
+		width: 70%;	
+	}
+	.footer-credits {
+		padding: 5px calc(40% - 361px);
+	}
+}
