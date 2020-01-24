@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="js/lib/owlcarousel2/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="js/lib/owlcarousel2/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="js/lib/Datepicker/jquery-ui.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 <body id="body">
@@ -14,14 +15,13 @@
 		<div class="container">
 			<div class="header-nav">
 				<img src="img/logo.svg" alt="newred" class="header-nav-logo">
-				<div class="header-nav-menu">
+				<div class="header-nav-menu" id="menu_top">
 					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Онлайн-запись</a></li>
-						<li><a href="#">Домашний уход</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#price">Цены</a></li>
+						<li><a href="#online_appointment">Онлайн-запись</a></li>
+						<li><a href="#home_care">Домашний уход</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="header-nav-phone">
@@ -32,7 +32,7 @@
 			<div class="header-content">
 				<div class="header-content-title">
 					<h1 class="header-content-title-h1">Все виды парикмахерских услуг и ногтевой индустрии</h1>
-					<button class="header-content-title-btn"><a href="#">Записаться</a></button>
+					<button class="header-content-title-btn" id="title_btn"><a href="#online_appointment">Записаться</a></button>
 				</div>
 				<div class="header-content-img">
 					<img src="img/newredgirl.jpg" alt="">
@@ -48,19 +48,16 @@
 			<div class="goal-content">
 				<h2 class="goal-content-title">Наша цель</h2>
 				<p class="goal-content-text">
-					подчеркнуть вашу 
+					Подчеркнуть вашу 
 					индивидуальность, учитывая не только модные тенденции, но и род деятельности, стиль в одежде.
 				</p>
 				<p class="goal-content-text">
 					Наши мастера для Вас подберут любую прическу по вашему желанию.  Креативная или классическая стрижка, вечерняя или повседневная укладка даст  вам возможность меняться в зависимости от настроения и обстоятельств .
 				</p>
-				<!-- <p class="goal-content-textbold">
-					Мы приложим максимум усилий, чтобы сделать вас еще прекраснее!
-				</p> -->
 			</div>
 		</div>
 	</section>
-	<section class="services">
+	<section class="services" id="services">
 		<div class="container">
 			<div class="owl-carousel disabled carousel">
 			    <div class="item haircut">
@@ -101,12 +98,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="price">
+	<section class="price" id="price">
 		<div class="container">
 			<a href="#" class="price-start" id="start">Стоимость услуг</a>
 			<div class="price-popUp" id="popUp">
-			      <span class="price-popUp-close" id="close"></span>
+			      <span class="price-popUp-close" id="close">	&#10006;</span>
 			      <h3 class="price-popUp-title">Цены на наши услуги</h3>
+			      <p class="price-popUp-text">Окончательная стоимость услуг завивсит от длинны и густоты волос и определяется мастером</p>
 			      <table class="price-popUp-table">
 					<tr class="price-line title">
 						 <td class="price-name">Мытье головы</td>
@@ -313,30 +311,31 @@
 			<div class="price-overlay" id="overlay"></div>
 		</div>
 	</section>
-	<section class="online_appointment">
+	<section class="online_appointment" id="online_appointment">
 		<div class="container">
+			<div class="appointment" id="appointment"><a href="#online_appointment" class="appointment_btn" id="appointment_btn"><p class="appointment_btn_text">запись</p></a></div>
 			<div class="online_appointment-formblock">
 				<form action="#" class="online_appointment-form">
 					<h2 class="online_appointment-title">Онлайн-запись</h2>
 					<input type="name" placeholder="Имя" name="name" class="online_appointment-input" required>
 					<input type="tel" placeholder="Телефон" name="tel" class="online_appointment-input" required>
-					<input type="date" placeholder="Выберите дату" name="date" class="online_appointment-input" required>
+					<input type="text" placeholder="Выберите дату" name="date" class="online_appointment-input" id="datepicker" required>
 					<div class="online_appointment-form-buttons">
 						<button type="submit" class="btn-submit">Записаться</button>
 						<button type="reset" class="btn-reset">Отмена</button>
 					</div>
 				</form>
 			</div>
-			<div class="online_appointment-img">
-				<img src="img/newredstudio.jpg" alt="">
+			<div class="online_appointment-studio">
+				<img src="img/newredstudio.jpg" alt="" class="studio-img" id="studio-img">
 			</div>
 		</div>
 	</section>
-	<section class="home_care">
+	<section class="home_care" id="home_care">
 		<div class="container">
 			<h2 class="home_care-title">Домашний уход</h2>
 			<p class="home_care-text">
-				Наши мастера посоветуют для вас как салонные услуги для ваших волос так же и уход в домашних условиях.
+				Наши мастера посоветуют для вас как салонные услуги для ваших волос, так и уход в домашних условиях.
 			</p>
 			<div class="home_care-slider owl-carousel disabled owl-theme">
 				<img src="img/1.png" alt="">
@@ -351,18 +350,18 @@
 	</section>
 	<footer>
 		<div class="container">
-			<div class="footer-nav">
+			<div class="up_btn" id="up_btn">&lsaquo;</div>
+			<div class="footer-nav" id="contacts">
 				<div class="footer-nav-logo">
 					<img src="img/logo.svg" alt="">
 				</div>
-				<div class="footer-nav-menu">
+				<div class="footer-nav-menu" id="menu_lower">
 					<ul>
-						<li><a href="#">Главная</a></li>
-						<li><a href="#">Услуги</a></li>
-						<li><a href="#">Цены</a></li>
-						<li><a href="#">Онлайн-запись</a></li>
-						<li><a href="#">Домашний уход</a></li>
-						<li><a href="#">Контакты</a></li>
+						<li><a href="#services">Услуги</a></li>
+						<li><a href="#price">Цены</a></li>
+						<li><a href="#online_appointment">Онлайн-запись</a></li>
+						<li><a href="#home_care">Домашний уход</a></li>
+						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 				</div>
 			</div>
@@ -370,12 +369,12 @@
 				<div class="footer-contacts-text">
 					<p>Студия красоты «NEW RED»</p>
 					<p>Адрес:	г. Краснодар , ул. Леваневского  187</p>
-					<p>Телефон:	+7 (967) 673-64-42 , +7 (918) 185-83-42</p>
-					<p>Е-mail:	info@newred.ru</p>
+					<p>Телефон:	<a href="#">+7 (967) 673-64-42</a>, <a href="#">+7 (918) 185-83-42</a></p>
+					<p>Е-mail:	<a href="#">info@newred.ru</a></p>
 					<p>Время работы:	с 9:00 до 20:00</p>
 				</div>
 				<div class="footer-contacts-map">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac49bcf43aacb6ed4e6e5be00f13fdaf48e7e391722936acf0020e078670c433f&amp;source=constructor" width="400" height="300" frameborder="0"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2819.2370246044493!2d38.98439021493356!3d45.040411769642496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f04f85477a3227%3A0x2b2d819b1012b36!2z0YPQuy4g0JvQtdCy0LDQvdC10LLRgdC60L7Qs9C-LCAxODcsINCa0YDQsNGB0L3QvtC00LDRgCwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksIDM1MDAwMg!5e0!3m2!1sru!2sru!4v1578239334681!5m2!1sru!2sru" width="100%" height="100%"frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 				</div>
 			</div>
 			<div class="footer-credits">
@@ -392,6 +391,7 @@
 	</footer>
 	<script src="js/lib/jquery/jquery-3.4.1.min.js"></script>
   	<script src="js/lib/owlcarousel2/owl.carousel.min.js"></script>
+  	<script src="js/lib/Datepicker/jquery-ui.min.js"></script>
   	<script src="js/main.js"></script>
 </body>
 </html>
