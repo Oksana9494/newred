@@ -14,13 +14,13 @@ $(document).ready(function(){
 });
 // квадратики карусели при наведении
 $(document).ready(function(){
-	$(".coat").mouseover(function(){
+	$(".wrap").mouseover(function(){
     	$(this).css("transition","1s");
     	$(this).css("border","10px solid rgba(187, 78, 79, 0.7)");
     	$(this).css("background","none");
     	$(this).css("color","rgba(0, 0, 0, 0)");
     });
-    $(".coat").mouseout(function(){
+    $(".wrap").mouseout(function(){
     	$(this).css("transition","1s");
     	$(this).css("border","10px solid rgba(187, 78, 79, 0)");
     	$(this).css("background","rgba(187, 78, 79, 0.7)");
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 // 2 слайдер
 $(document).ready(function(){
-  $(".home_care-slider").owlCarousel({
+  $(".home-care__slider").owlCarousel({
   	items: 1,
   	loop: true,
   	rewind: true,

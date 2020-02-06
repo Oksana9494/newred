@@ -30,43 +30,44 @@ h2 {
 	background: #9c9692;
 	color: #fff;
 }
-.header-nav-logo {
+.header-nav__logo {
 	padding-left: 26px;
 	width: 60px;
 	height: 70px;
 }
-.header-nav-menu ul {
+.header-nav__menu {
 	display: flex;
 	font-size: 16px;
-	margin-top: 6px;
+	margin-top: 3px;
+	margin-bottom: 3px;
 }
-.header-nav-menu ul li {
+.header-nav__menu li {
 	list-style: none;
 	padding: 20px 25px;
 }
-.header-nav-menu ul li:hover {
+.header-nav__menu li:hover {
 	background: #d4cec8;
 	transition: 0.8s;
 }
-.header-nav-menu ul li:active {
+.header-nav__menu li:active {
 	background: linear-gradient(0deg, #f4f6f0, #d4cec8);
 }
-.header-nav-menu ul li a {
+.header-nav__menu li a {
 	text-decoration: none;
 	color: #fff;
 	cursor: pointer;
 }
-.header-nav-menu ul li a:active {
+.header-nav__menu li a:active {
 	font-weight: bold;
 }
-.header-nav-phone {
+.header-nav__phone {
 	width: 170px;
 	background: #88383d;
 }
-.header-nav-phone p {
+.header-nav__phone p {
 	margin: 12px 0 7px 12px;
 }
-.header-nav-phone a {
+.header-nav__phone a {
 	text-decoration: none;
 	color: #fff;
 	font-weight: bold;
@@ -77,12 +78,12 @@ h2 {
 	justify-content: flex-end;
 	background: #ecece6;
 }
-.header-content-title {
+.header-content__text {
 	background: #ecece6;
 	width: 38.2%;
 } 
 
-.header-content-title-h1 {
+.header-content__title {
 	display: block;
 	color: #5a5653;
 	margin-top: calc(55% - 129px);
@@ -91,7 +92,7 @@ h2 {
 	font-weight: normal;
 	width: 400px;
 }
-.header-content-title-btn {
+.header-content__btn {
 	display: block;
 	width: 130px;
 	background: #bb4e4f;
@@ -101,12 +102,11 @@ h2 {
 	border: none;
 	cursor: pointer;
 }
-.header-content-title-btn:hover {
+.header-content__btn:hover {
 	position: relative;
-	/* background: linear-gradient(0deg, #bb4e4f, #e16567); */
 	z-index: 1;
 }
-.header-content-title-btn::before {
+.header-content__btn::before {
 	position: absolute;
     content: "";
     top: 0;
@@ -118,22 +118,23 @@ h2 {
     transition: opacity 0.5s linear;
     opacity: 0;
 }
-.header-content-title-btn:hover::before {
+.header-content__btn:hover::before {
 	opacity: 1;
 }
-.header-content-title-btn:active {
+.header-content__btn:active {
 	background: linear-gradient(0deg, #e16567, #bb4e4f);
 }
-.header-content-title-btn a {
+.header-content__btn a {
 	font-size: 18px;
 	color: #fff;
 	text-decoration: none;
+	margin-left: 15.54px;
 }
-.header-content-img {
+.header-content__img {
 	height: calc(100vh - 70px);
 	width: 62.8%;
 }
-.header-content-img img{
+.header-content__img img{
     height: 100%;
     width: 100%;
 }
@@ -151,16 +152,9 @@ h2 {
 	margin-left: 30px;
 	padding-top: 30px;
 }
-.goal-content-text {
+.goal-content__text {
 	line-height: 1.5em;
 	width: 600px;
-}
-.goal-content-textbold {
-	font-size: 22px;
-	font-weight: normal;
-	color: #9c9692;
-	text-align: right;
-	margin-top: 40px;
 }
 .services {
 	margin-top: -50px;
@@ -197,7 +191,7 @@ h2 {
 .therapy {
 	background: url(../img/therapy.jpg) no-repeat center;
 }
-.coat {
+.wrap {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: center;
@@ -205,13 +199,13 @@ h2 {
 	background: rgba(187, 78, 79, 0.7);
 	width: 194px;
 	height: 194px;
-	color: #fff;
+	color: #f4f6f0;
 	border: 10px solid rgba(187, 78, 79, 0)
 }
-.coat p {
-	font-size: 14px;
+.wrap p {
+	font-size: 18px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	margin-left: 15px;
 	margin-right: 40px;
 	width: 120px;
@@ -294,15 +288,15 @@ h2 {
 	z-index: 6;
 	color: #fff;
 }
-.price-popUp-title {
+.price-popUp__title {
 	margin-left: 10px; 
 }
-.price-popUp-text {
+.price-popUp__text {
 	margin-left: 10px; 
 	width: 600px;
 	margin-bottom: 25px;
 }
-.price-popUp-close {
+.price-popUp__close {
     cursor: pointer;
 	position: absolute;
 	width: 23px;
@@ -325,7 +319,7 @@ h2 {
 }
 
 /* стили таблицы цен */
-.price-popUp-table {
+.price-popUp__table {
 	margin: 0 auto;
 	border-radius: 10px;
 	border-spacing: 10px;
@@ -341,12 +335,12 @@ h2 {
 .price-line:hover {
 	background: #fff;
 }
-.price-name {
+.price__name {
 	width: 70%;
 	padding: 5px 0 5px 20px;
 	border-radius: 5px;
 }
-.price-number {
+.price__number {
 	text-align: center;
 	width: 10%;
 	border-radius: 5px;
@@ -361,13 +355,13 @@ h2 {
 .price-inane {
 	display: none;
 }
-.online_appointment {
+.online-appointment {
 	position: relative;
 	margin-top: -50px;
 	padding-top: 50px;
 	margin-bottom: 100px;
 }
-.online_appointment .container {
+.online-appointment .container {
 	display: flex;
 	flex-direction: row-reverse;
 }
@@ -394,7 +388,7 @@ h2 {
 	margin-top: 35px;
 	margin-left: 8px;
 }
-.online_appointment-formblock{
+.online-appointment-formblock{
 	position: absolute;
 	left: 0;
 	top: 50px;
@@ -404,7 +398,7 @@ h2 {
 	border-left: 0px solid transparent;
 	border-right: 90px solid transparent
 }
-.online_appointment-form {
+.online-appointment-form {
 	display: flex;
 	flex-direction: column;
 	width: 350px;
@@ -412,26 +406,26 @@ h2 {
 	background: #fff;
 	margin: 125px auto;
 }
-.online_appointment-title {
+.online-appointment__title {
 	display: block;
 	width: 200px;
 	margin: 15px auto 5px;
 }
-.online_appointment-input {
+.online-appointment__input {
 	width: 85%;
 	margin: 10px auto 0;
 	height: 24px;
 	border-bottom: 1px solid #9c9692;
 }
-.online_appointment-studio {
+.online-appointment-studio {
 	height: 500px;
 	overflow: hidden;
 }
-.studio-img {
+.online-appointment__img {
 	height: 100%;
 	/* margin-left: 62.2%; */
 }
-.online_appointment-form-buttons {
+.online-appointment-buttons {
 	display: flex;
 	flex-direction: row-reverse;
 	margin-top: 30px;
@@ -484,27 +478,27 @@ h2 {
 	background: #9c9692;
 	color: #fff;
 }
-.home_care {
+.home-care {
 	margin-top: -30px;
 	padding-top: 30px;
 }
-.home_care .container {
+.home-care .container {
 	position: relative;
 }
-.home_care-title {
+.home-care__title {
 	margin-left: calc(40% - 250px);
 }
-.home_care-text {
+.home-care__text {
 	margin-left: calc(40% - 250px);
 	width: 500px;
 	line-height: 1.5em;
 }
-.home_care-slider {
+.home-care__slider {
 	width: 444.44px !important;
 	margin-left: calc(40% - 250px);
 	margin-top: 50px;	
 }
-.home_care-newred {
+.home-care__newred {
 	position: absolute;
 	color: #efeeed;
 	font-size: 100px;
@@ -540,37 +534,37 @@ footer {
 	justify-content: flex-start;
 	margin-top: 5px;
 }
-.footer-nav-logo {
+.footer-nav__logo {
 	width: 60px;
 	margin-left: calc(40% - 361px);
 }
-.footer-nav-logo img {
+.footer-nav__logo img {
 	width: 100%;
 }
-.footer-nav-menu {
+.footer-nav__menu {
 	width: 50%;
 	margin-left: 10%;
 }
-.footer-nav-menu ul {
+.footer-nav__menu ul {
 	display: flex;
 	justify-content: space-between;
 }
-.footer-nav-menu ul li {
+.footer-nav__menu ul li {
 	list-style-type: none;
 	padding: 20px 25px;
 }
-.footer-nav-menu ul li:hover {
+.footer-nav__menu ul li:hover {
 	background: #d4cec8;
 	transition: 0.8s;
 }
-.footer-nav-menu ul li:active {
+.footer-nav__menu ul li:active {
 	background: linear-gradient(0deg, #f4f6f0, #d4cec8);
 }
-.footer-nav-menu ul li a {
+.footer-nav__menu ul li a {
 	text-decoration: none;
 	color: #fff;
 }
-.footer-nav-menu ul li a:active {
+.footer-nav__menu ul li a:active {
 	font-weight: bold;
 }
 .footer-contacts {
@@ -583,17 +577,17 @@ footer {
 	padding-bottom: 20px;
 	align-items: center;
 }
-.footer-contacts-text {
+.footer-contacts__text {
 	margin-left: calc(40% - 361px);
 }
-.footer-contacts-text p {
+.footer-contacts__text p {
 	margin-bottom: 15px;
 }
-.footer-contacts-text p a {
+.footer-contacts__text p a {
 	text-decoration: none;
 	color: #fff;
 }
-.footer-contacts-map {
+.footer-contacts__map {
 	width: 600px;
 	height: 300px;
 	background: #efefef;
@@ -605,7 +599,7 @@ footer {
 	font-size: 14px;
 	padding: 5px calc(35% - 361px) 5px calc(40% - 361px);
 }
-.right {
+.footer-credits__text-right {
 	text-align: right;
 }
 
@@ -613,24 +607,27 @@ footer {
 /* планшеты и мобильные */
 /* 992px - 1360px */
 @media screen and (max-width: 1360px) {
-	.header-content-img {
+	.header-content__img {
 		height: 500px;
 		width: 1000px;
+	}
+	.header-content__text {
+		width: auto;
+	}
+	.header-content__title, .header-content__btn {
+		margin-left: 5%;
 	}
 	.carousel {
 		width: 77.5% !important;
 	}
-	.header-content-title-h1, .header-content-title-btn {
-		margin-left: 5%;
-	}
-	.home_care-newred {
+	.home-care__newred {
 		right: calc(20% - 250px);
 	}
-	.footer-contacts-map {
+	.footer-contacts__map {
 		width: 500px;
 		margin-right: calc(40% - 361px);
 	} 
-	.footer-nav-menu {
+	.footer-nav__menu {
 		width: 70%;	
 	}
 	.footer-credits {
