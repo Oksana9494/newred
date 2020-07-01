@@ -14,15 +14,13 @@ $(document).ready(function(){
 });
 // квадратики карусели при наведении
 $(document).ready(function(){
-	$(".wrap").mouseover(function(){
+	$(".carousel-item").mouseover(function(){
     	$(this).css("transition","1s");
-    	$(this).css("border","10px solid rgba(187, 78, 79, 0.7)");
     	$(this).css("background","none");
     	$(this).css("color","rgba(0, 0, 0, 0)");
     });
-    $(".wrap").mouseout(function(){
+    $(".carousel-item").mouseout(function(){
     	$(this).css("transition","1s");
-    	$(this).css("border","10px solid rgba(187, 78, 79, 0)");
     	$(this).css("background","rgba(187, 78, 79, 0.7)");
     	$(this).css("color","#fff");
     });
@@ -54,14 +52,14 @@ $("#datepicker").datepicker({
 
 // всплывающее окно
 $(document).ready(function() { 
-	$('a#start').click( function(event){ 
+	$('#start').click( function(event){ 
 		event.preventDefault(); 
 		$('#overlay').fadeIn(300, 
 		 	function(){
 				$('#popUp')				   
 					.css('display', 'block') 
 					.animate({opacity: 1, top: '15%'}, 490);
-				$('#body') 
+				$('body') 
 					.css('overflow', 'hidden');
 		});
 	});
@@ -72,7 +70,7 @@ $(document).ready(function() {
 				function(){ 
 					$(this).css('display', 'none'); 
 					$('#overlay').fadeOut(220);
-					$('#body') 
+					$('body') 
 					.css('overflow', 'auto'); 
 				}
 			);
@@ -83,19 +81,19 @@ $(document).ready(function() {
 
 //плавный переход по якорным ссылкам
 $(document).ready(function(){
-    $("#menu_lower").on("click","a", function (event) {
+    $("#lowerMenu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
-    $("#menu_top").on("click","a", function (event) {
+    $("#topMenu").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1500);
     });
-    $("#title_btn").on("click","a", function (event) {
+    $("#offer").on("click","a", function (event) {
         event.preventDefault();
         var id  = $(this).attr('href'),
             top = $(id).offset().top;
@@ -162,11 +160,11 @@ $(document).ready(function(){
 
 // движение картинки
 $(document).ready(function(){
-	$(".online_appointment-formblock").mouseover(function(){
+	$(".block-appointment").mouseover(function(){
     	$("#studio-img").css("marginLeft","30%");
     	$("#studio-img").css("transition","7s");
     });
-    $(".online_appointment-formblock").mouseout(function(){
+    $(".block-appointment").mouseout(function(){
     	$("#studio-img").css("marginLeft","0");
     	$("#studio-img").css("transition","7s");
     });
