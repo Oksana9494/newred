@@ -37,8 +37,9 @@ h2 {
 	color: #fff;
 }
 .logo {
-	width: 60px;
-	height: 70px;
+	width: 50px;
+	height: 60px;
+	align-self: center;
 }
 .logo_left{
 	padding-left: 26px;
@@ -641,6 +642,9 @@ footer {
 		width: 100%;
 		/* padding-top: 15px; */
 	}
+	.menu {
+		display: none;
+	}
 	.toggle-menu {
 		display: none;
 		position: absolute;
@@ -648,7 +652,7 @@ footer {
 		flex-direction: column;
 		width: 100%;
 		z-index: 4;
-		background-color: #9c9692;
+		background-color: rgba(156, 150, 146, 0.95);
 	}
 	.toggle__btn {
 		display: block;
