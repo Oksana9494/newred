@@ -72,6 +72,34 @@ h2 {
 .menu__item a:active {
 	font-weight: bold;
 }
+.toggle__btn {
+	position: relative;
+	display: none;
+	align-self: center;
+	width: 45px;
+	height: 35px;
+	cursor: pointer;
+}
+.toggle__btn span{
+	display: block;
+	position: absolute;
+	background: #212121;
+	left: 0;
+	width: 45px;
+	height: 1.5px;
+}
+.toggle__btn span:nth-child(1) {	
+	top: 10px;
+	width: 15px;
+}
+.toggle__btn span:nth-child(2) {
+	top: 20px;
+	width: 22px;
+}
+.toggle__btn span:nth-child(3) {
+	top: 30px;
+	right: 0px;
+}
 .phone {
 	width: 170px;
 	background: #88383d;
@@ -579,6 +607,7 @@ footer {
 	}
 	.page-main__title{
 		font-size: 35px;
+		width: 350px;
 	}
 	.page-main-content__img {
 		height: 500px;
@@ -606,8 +635,26 @@ footer {
 	.wrap {
 		max-width: 750px;
 	}
-	.menu {
+	.nav {
+		position: fixed;
+		z-index: 9999;
+		width: 100%;
+		/* padding-top: 15px; */
+	}
+	.toggle-menu {
 		display: none;
+		position: absolute;
+		top: 66px;
+		flex-direction: column;
+		width: 100%;
+		z-index: 4;
+		background-color: #9c9692;
+	}
+	.toggle__btn {
+		display: block;
+	}
+	.page-main-content {
+		padding-top: 70px;
 	}
 	.block-offer {
 		margin-right: 2%;
@@ -632,6 +679,23 @@ footer {
 	}
 	.carousel {
 		width: 750px !important;
+	}
+	.price-popup {
+		top: 85px !important;
+		margin-top: 0;
+		left: 37%;
+	}
+	.price-popup__text {
+		width: 80%;
+	}
+	.price-popup-table {
+		padding-bottom: 100px;
+	}
+	.appointment_btn {
+		left: 30px;
+		bottom: 30px;
+		top: initial;
+		right: initial;
 	}
 }
 /* 650px - 768px */
@@ -666,7 +730,7 @@ footer {
 		letter-spacing: 0.5px;
 		margin-top: initial;
 		text-align: center;
-		width: 90%;
+		width: 100%;
 	}
 	.page-main__btn {
 		margin: 0 auto;
@@ -721,6 +785,9 @@ footer {
 	.block-about__img {
 		display: none;
 	}
+	.price {
+		padding-top: 40px;
+	}
 	.carousel {
 		width: 100% !important;
 	}
@@ -730,6 +797,11 @@ footer {
 	}
 	.carousel .owl-stage-outer {
 		width: 480px !important;
+	}
+	.price-popup {
+		width: 90%;
+		left: 0;
+		margin-left: 2%;
 	}
 	.block-appointment {
 		border-bottom: 501px solid rgba(244, 246, 240, 0.5);
@@ -748,10 +820,20 @@ footer {
 	.page-main__title {
 		font-size: 35px;
 	}
+	.price {
+		padding-top: 0;
+	}
 	.carousel .owl-stage-outer {
 		width: 250px !important;
 	}
-	
+	.price-popup {
+		width: 96%;
+		padding: 0;
+	}
+	.price-line {
+		font-size: 14px;
+		font-weight: bold;
+	}
 	.block-appointment-form {
 		width: 300px;
 	}

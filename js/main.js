@@ -71,7 +71,7 @@ $(document).ready(function() {
 					$(this).css('display', 'none'); 
 					$('#overlay').fadeOut(220);
 					$('body') 
-					.css('overflow', 'auto'); 
+					   .css('overflow', 'auto'); 
 				}
 			);
 	});
@@ -182,5 +182,12 @@ $(document).ready(function(){
     	$(this).css("border","1px solid #d4cec8");
     	$(this).css("transition","1s");
     	$(this).css("background","#fff");
+    });
+});
+
+// появление меню при 992px и меньше
+$(document).ready(function() { 
+    $(".toggle__btn").on("click", function() {
+        $(".toggle-menu").toggle();
     });
 });
