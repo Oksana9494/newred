@@ -159,15 +159,26 @@ $(document).ready(function(){
 
 
 // движение картинки
-$(document).ready(function(){
-	$(".block-appointment").mouseover(function(){
-    	$("#studio-img").css("marginLeft","30%");
-    	$("#studio-img").css("transition","7s");
-    });
-    $(".block-appointment").mouseout(function(){
-    	$("#studio-img").css("marginLeft","0");
-    	$("#studio-img").css("transition","7s");
-    });
+/*$(document).ready(function(){
+	
+});
+*/
+$(document).ready(function() {
+    var w = $(window).width(); // Получаем ширину окна
+    if (w <= 650) { // Если ширина окна меньше, либо равна 650
+        $(".block-appointment").mouseover(function(){
+            $("#studio-img").css("marginLeft","0");
+        }); 
+    } else {
+        $(".block-appointment").mouseover(function(){
+            $("#studio-img").css("marginLeft","30%");
+            $("#studio-img").css("transition","7s");
+        });
+        $(".block-appointment").mouseout(function(){
+            $("#studio-img").css("marginLeft","0");
+            $("#studio-img").css("transition","7s");
+        });
+    }
 });
 
 // кнопка с ценами при наведении
