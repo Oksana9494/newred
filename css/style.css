@@ -121,7 +121,7 @@ h2 {
 }
 .block-offer {
 	background: #ecece6;
-	width: 38.2%;
+	width: 50%;
 } 
 
 .page-main__title {
@@ -206,7 +206,7 @@ h2 {
 	margin: 0 auto;
 }
 .carousel .owl-stage-outer {
-	width: 83% !important;
+	width: 87% !important;
 	margin: 0 auto;
 }
 
@@ -418,11 +418,11 @@ h2 {
 	margin-top: 35px;
 	margin-left: 8px;
 }
-.block-appointment{
+.block-appointment {
 	position: absolute;
 	left: 0;
 	top: 50px;
-	width: 67.7%; 
+	width: 77%; 
 	height: 0; 
 	border-bottom: 501px solid #f4f6f0;
 	border-left: 0px solid transparent;
@@ -595,16 +595,18 @@ footer {
 	text-align: right;
 }
 
-@media screen and (min-width: 1920px) {
+
+@media screen and (max-width: 1366px) {
 	.block-offer {
-		width: 50%;
+		width: 38.2%;
 	}
 	.block-appointment {
-		width: 77%;
+		width: 67.7%;
 	}
 	.carousel .owl-stage-outer {
-		width: 87%;
+		width: 83%;
 	}
+
 }
 /* планшеты и мобильные */
 /* 992px - 1200px */
