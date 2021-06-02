@@ -59,9 +59,7 @@ $(document).ready(function() {
 				$('#popUp')				   
 					.css('display', 'block') 
 					.animate({opacity: 1, top: '15%'}, 490);
-				$('body') 
-					.css('overflow', 'hidden')
-                    .css('marginRight', '15px');
+				$('body').addClass('non-scrolling') 
 		});
 	});
 //по нажатию на крестик закрываю окно
@@ -71,9 +69,7 @@ $(document).ready(function() {
 				function(){ 
 					$(this).css('display', 'none'); 
 					$('#overlay').fadeOut(220);
-					$('body') 
-					   .css('overflow', 'auto')
-                       .css('marginRight', '0px'); 
+					$('body').removeClass('non-scrolling')
 				}
 			);
 	});
